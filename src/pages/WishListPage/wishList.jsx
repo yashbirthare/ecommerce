@@ -50,13 +50,8 @@ const getWishListProduct = ({new_arrival,id,image,tittle,count,rate,processor,ca
 
 </div>
 <p className="IM-REMOVE" onClick={() => dispatch({type:"REMOVE_To_WISHLIST",id:id})}><ImCross/></p>
-
-
 </div> 
-
-</div>
-    
-    )
+</div>)
 
   return(
         <div>
