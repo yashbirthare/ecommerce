@@ -3,7 +3,7 @@ import mainbanner2 from "../../assets/images/mainbanner2.jpeg"
 import mainbanner3 from "../../assets/images/mainbanner3.jpeg"
 import mainbanner4 from "../../assets/images/mainbanner4.jpeg"
 import React, { useEffect, useState } from 'react'
-import "./slider.css"
+import "./Slider.css"
 
 const slider = () => {
 

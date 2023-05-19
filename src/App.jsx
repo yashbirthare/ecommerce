@@ -1,14 +1,14 @@
 import "./App.css";
 import React from 'react'
-import Header from "./components/Header/header";
-import Navbar from "./components/Navbar/navbar";
-import Home from "./pages/Home/home";
+import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/Home/Home";
 
 import { Routes,Route } from "react-router-dom";
-import ProductStore from "./pages/ProductStore/productStore"
+import ProductStore from "./pages/ProductStore/ProductStore"
 import {ProductDetail} from "./pages/ProductDetail/productDetail";
-import WishList from "./pages/WishListPage/wishList";
-import CartPage  from "./pages/CartListPage/cartList";
+import WishList from "./pages/WishListPage/WishList";
+import CartPage  from "./pages/CartListPage/CartList";
 
 
 

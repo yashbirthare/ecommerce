@@ -1,5 +1,5 @@
 import {useWishList} from "../../context/wishListContext"
-import './wishList.css';
+import './WishList.css';
 import { Link } from "react-router-dom";
 import { ImCross } from 'react-icons/im';
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { IoIosHelpCircle} from 'react-icons/io';
 import { AiFillGift} from 'react-icons/ai';
 import { FaMapMarkerAlt} from 'react-icons/fa';
-import "./header.css"
+import "./Header.css"
 
 
 

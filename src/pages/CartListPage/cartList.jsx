@@ -1,5 +1,5 @@
 import { useCartList } from "../../context/cartListContext"
-import './cartList.css';
+import './CartList.css';
 import { Link } from "react-router-dom";
 import { ImCross } from 'react-icons/im';
 import {IoMdHeart} from 'react-icons/io';

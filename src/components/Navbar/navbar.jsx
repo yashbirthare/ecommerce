@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import  laptop  from "../../assets/images/laptop.jpg";
 import {useWishList} from "../../context/wishListContext";
 import {useCartList} from '../../context/cartListContext';
-import "./navbar.css"
+import "./Navbar.css"
 
 
 const navbar = () => {
