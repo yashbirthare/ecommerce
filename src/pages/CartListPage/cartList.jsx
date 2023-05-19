@@ -15,8 +15,10 @@ const {dispatch} = useWishList();
 const getCartListProduct = ({new_arrival,id,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty}) => (
 
     
-    <div id="Cart-Product-Store">  
-
+    <div id="Cart-Product-Store">
+     <section><h2>Total quantity: </h2></section>
+     <div className="section-main">  
+    <section className="Cart-Product-Item-secound">
     <div className="Cart-Product-Main-Area-2nd">
     
     <div>
@@ -47,6 +49,10 @@ const getCartListProduct = ({new_arrival,id,image,tittle,count,rate,processor,ca
    <p className="Cart-Product-qty-price">Hurry, Only {qty} left!</p>
  </div>  
  <div className="Cart-Product-Main-BTN"> 
+ <p className="Qty1" >Qty:</p>
+ <button className="Qty1-plus" >+</button>
+ <button className="Qty1-mainus">-</button>
+
 </div>
 
 </div>
@@ -54,9 +60,22 @@ const getCartListProduct = ({new_arrival,id,image,tittle,count,rate,processor,ca
 <p className="IM-REMOVE" onClick={() => dispatchCart({type:"REMOVE_To_CartList",id:id})}><ImCross/></p>
 <p className="emoji-2"   onClick={() => dispatch({type:"ADD_TO_WishList",payload:id})} ><IoMdHeart/> </p>
 </div>
-
-</div> 
 </div>
+</section>
+
+ <section className="Checkout-area-main">
+   <h3 className="Price Details">Price Details</h3>
+   <div className="divider"></div>
+   <p>Discount On MRP</p>
+   <p>Coupon Discount</p>
+   <p>Convenience Fee</p>
+   <p>Total Amount</p>
+   <button>Checkout</button>
+</section>
+</div>
+</div>
+
+
 )
     return(
         <div>

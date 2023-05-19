@@ -22,6 +22,9 @@ const WishListProvider = ({children}) => {
            case "REMOVE_To_WISHLIST":
            return {...state, wishList: state.wishList.filter((Wis) => Wis.id !== action.id )}
 
+           case "MOVE_TO_CART":
+           return {...state, wishList: state.wishList.filter((wis) => wis.id !== action.id), cartList: state.cartList((item) => item.id === action.id)}
+
         default:
             return state;
         }

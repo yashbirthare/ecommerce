@@ -1,30 +1,37 @@
+
 #Cart-Product-Store{
+
     text-align:justify;
-    margin: 30px 30px 30px 10px;
-    border: 1px solid;
-    width: 70%;
+    margin: 20px;
+   
     border-radius: 10px;
  }
+/* ======================================================= */
 
+.section-main{
+   display: flex;
+}
+
+/* ======================================================================= */
+
+ .Cart-Product-Item-secound{
+   border: 1px solid black;
+  }
+
+ 
 /* ============================================================== */
 .Cart-Product-Main-Area-2nd{
     display: flex;
    margin: 0px;
    padding: 2px;
-   height: 200px;
-}
-
-.Cart-Product-Main-Area-2nd:hover{
-background-color: off wheat;
- box-shadow: 3px 3px 15px var(--secondary-color),3px 3px 15px var(--primary-color);
- border-radius: 10px;
-
+   height: 180px;
 }
 
 /* ======================================================================= */
+
 .Cart-Product-Item-new{
    position: absolute;
-   top:165px;
+   top:210px;
    border-radius: 5px 20px;
    border: 1px solid yellowgreen;
    outline: 1px solid black;
@@ -120,22 +127,32 @@ background-color: off wheat;
    margin: 10px 0 0 0;
 }
 /* ====================================================================================== */
-
-.Cart-Product-Buy-btn{
-   background:#000000;
-   border: 2px solid white;
-   color:#fff;
-   margin: 0 0 0 25px;
-   padding: 10px 25px;
-   font-weight: bold;
+.Cart-Product-Main-BTN{
+   display: flex;
 }
 
-.Cart-Product-Buy-btn:hover{
-   background-color:#fff;
-   color: #000000;
-   border: 2px solid black;
-   transition: all 0.5s ease 0s;
-  
+.Qty1{
+   font-size: large;
+   margin: 3px;
+}
+.Qty1-plus{
+   background-color: var(--primary-color);
+   color: var(--secondary-color);
+   margin:3px;
+
+}
+.Qty1-mainus{
+     background-color: var(--secondary-color);
+     color:var(--primary-color);
+     margin:3px;
+
+}
+
+
+/* ========================================================================== */
+.emoji{
+   display: flex;
+   flex-direction: column;
 }
 
 
@@ -144,12 +161,9 @@ background-color: off wheat;
    font-size: 20px;
    margin: 7px 0 0 55px;
 }
+
 .IM-REMOVE:hover{
    color: red;
-}
-.emoji{
-    display: flex;
-    flex-direction: column;
 }
 
 .emoji-2{
@@ -160,6 +174,27 @@ background-color: off wheat;
     color:var(--secondary-color)
 }
 
+/* =================================================================== */
+.Checkout-area-main{
+   
+   border: 1px solid black;
+   margin: 0 0 0 10px ;
+   width: 50%;
+}
+
+.Price Details{
+   text-align: center;
+}
+
+/* ===================================================================== */
+   
+.divider{
+   border-bottom: 1px solid #000;
+   margin: auto;
+   width: 90%;
+   padding: 0;
+    box-sizing: border-box;
+}
 /* ============================================================================== */
   @media  only screen and (max-width: 600px) {
    
