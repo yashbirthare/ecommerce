@@ -1,5 +1,5 @@
 import { useCartList } from "../../context/cartListContext"
-import './CartList.css';
+import './cartList.css';
 import { Link } from "react-router-dom";
 import { ImCross } from 'react-icons/im';
 import {IoMdHeart} from 'react-icons/io';
@@ -47,7 +47,6 @@ const getCartListProduct = ({new_arrival,id,image,tittle,count,rate,processor,ca
    <p className="Cart-Product-qty-price">Hurry, Only {qty} left!</p>
  </div>  
  <div className="Cart-Product-Main-BTN"> 
-      <button className="Cart-Product-Buy-btn" >BUY NOW</button>
 </div>
 
 </div>

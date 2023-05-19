@@ -1,7 +1,8 @@
-import {useWishList} from "../../context/wishListContext"
-import './WishList.css';
+import React from 'react'
+import './wishList.css';
 import { Link } from "react-router-dom";
 import { ImCross } from 'react-icons/im';
+import { useWishList } from '../../context/wishListContext';
 
 
 const WishList = () => {
@@ -44,11 +45,11 @@ const getWishListProduct = ({new_arrival,id,image,tittle,count,rate,processor,ca
    <p className="Wishlist-Product-qty-price">Hurry, Only {qty} left!</p>
  </div>  
  <div className="Wishlist-Product-Main-BTN"> 
-      <button className="Wishlist-Product-Buy-btn" >BUY NOW</button>
+      <button className="Wishlist-Product-Buy-btn" onClick ={() => dispatch({type:"REMOVE_To_WISHLIST",id:id})} >MOVE TO CART</button>
 </div>
 
 </div>
-<p className="IM-REMOVE" onClick={() => dispatch({type:"REMOVE_To_WishList",id:id})}><ImCross/></p>
+<p className="IM-REMOVE" onClick={() => dispatch({type:"REMOVE_To_WISHLIST",id:id})}><ImCross/></p>
 
 
 </div> 

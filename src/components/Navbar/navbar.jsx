@@ -10,7 +10,7 @@ import {useCartList} from '../../context/cartListContext';
 import "./Navbar.css"
 
 
-const navbar = () => {
+const Navbar = () => {
   const {state} = useWishList();   
   const {wishList} = state;
   const {stateCart} = useCartList();
@@ -41,4 +41,4 @@ placeholder='search on Eco-Store    💻'/>
   )
 }
 
-export default navbar 
+export default Navbar 

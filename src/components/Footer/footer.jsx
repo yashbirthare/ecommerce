@@ -7,7 +7,7 @@ import "./Footer.css"
 
 import React from 'react'
 
-const footer = () => {
+const Footer = () => {
   return (
     <div id="Footer-main">
     <div className="footer-1">© buyLaptop 2023. All rights reserved. Site – Managed by Yash Birthare.</div>
@@ -23,4 +23,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default Footer

@@ -5,10 +5,10 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 
 import { Routes,Route } from "react-router-dom";
-import ProductStore from "./pages/ProductStore/ProductStore"
+import ProductStore from "./pages/ProductStore/productStore"
 import {ProductDetail} from "./pages/ProductDetail/productDetail";
-import WishList from "./pages/WishListPage/WishList";
-import CartPage  from "./pages/CartListPage/CartList";
+import WishList from "./pages/WishListPage/wishList";
+import CartPage  from "./pages/CartListPage/cartList";
 
 
 

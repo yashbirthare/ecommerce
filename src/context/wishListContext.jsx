@@ -11,7 +11,7 @@ const WishListProvider = ({children}) => {
     
     function wishListFun (state, action)  {
         switch(action.type){
-           case "Add_To_WishList":
+           case "Add_To_WISHLIST":
            const data = state.wishList.find((item) => item.id === action.payload.id)
            if(data){
               alert('data is already present in wishlist')
@@ -19,7 +19,7 @@ const WishListProvider = ({children}) => {
             return {...state, wishList: [...state.wishList , action.payload]}
            }
            
-           case "REMOVE_To_WishList":
+           case "REMOVE_To_WISHLIST":
            return {...state, wishList: state.wishList.filter((Wis) => Wis.id !== action.id )}
 
         default:

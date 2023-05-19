@@ -1,7 +1,7 @@
 import { useCartList } from "../../context/cartListContext";
 import { useStore } from "../../context/storeContext"
 import { useWishList } from "../../context/wishListContext";
-import "./ProductStore.css"
+import "./productStore.css"
 
 import { Link } from "react-router-dom";
 
@@ -45,8 +45,8 @@ return (
  </div>  
 
  <div className="ProductStore-Main-BTN"> 
-      <button className="ProductStore-Cart-btn" onClick={()=> dispatch ({type:"Add_To_WishList",payload: item})}>ADD TO WISHLIST</button>
-      <button className="ProductStore-Buy-btn" onClick={()=> dispatchCart({type:"Add_To_CartList",payload: item})} >BUY NOW</button>
+      <button className="ProductStore-Cart-btn" onClick={()=> dispatch ({type:"Add_To_WISHLIST",payload: item})}>ADD TO WISHLIST</button>
+      <button className="ProductStore-Buy-btn" onClick={()=> dispatchCart({type:"Add_To_CartList",payload: item})} >MOVE TO CART</button>
 </div>
 </div>)})} 
     
