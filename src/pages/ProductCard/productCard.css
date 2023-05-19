@@ -1,0 +1,283 @@
+#ProductCard-Item-List{
+ display: flex;
+ width: 100%;
+ text-align: justify;
+ margin: 0 0 110px 5px ;
+}
+/* 
+=========================================================================== */
+
+.ProductCard-Item-new{
+    position: absolute;
+    border-radius: 5px 20px;
+    border: 2px solid yellowgreen;
+    outline: 2px solid black;
+    font-size: large;
+    font-weight: bolder;
+    height: 20px;
+    background-color:rgb(255, 174, 0); 
+    padding: 0 9px 9px 5px;
+    margin-left: 5px;
+}
+
+.ProductCard-Item-items{
+    width: 400px;
+    height: 300px;
+}
+
+/* ====================button======================= */
+.Main-BTN{
+    width: 100%;
+    text-align:center;
+}
+
+.Cart-btn{
+    margin: 10px;
+    background: rgb(255, 174, 0);
+    border: 2px solid white;
+    color:#000000;
+    padding: 20px 40px;
+    font-weight: bold;
+}
+
+.Cart-btn:hover{
+    background-color: #000000;
+    color: rgb(255, 174, 0);
+    border: 2px solid  rgb(255, 174, 0);
+    transition: all 0.8s ease 0s;
+}
+
+.Buy-btn{
+    background:#000000;
+    border: 2px solid white;
+    color:#fff;
+    padding: 20px 55px;
+    font-weight: bold;
+}
+
+.Buy-btn:hover{
+    background-color: #fff;
+    color:#000000;
+    border: 2px solid black;
+    transition: all 0.8s ease 0s;
+
+}
+/* ====================button======================= */
+
+#ProductCard-main {
+    margin: auto 40px;
+    width: 100%;
+   
+ 
+}
+
+ .ProductCard-tittel-tag{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: auto;
+}
+
+.ProductCard-description-tag {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:inherit;
+    font-weight: inherit;
+   
+} 
+/* ============================================= */
+.ProductCard-last-Item{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:initial;
+    font-weight: 700;
+    margin: 4px;
+}
+
+.ProductCard-off-Ex{
+    color: green;
+    font-size: small;
+
+}
+
+.ProductCard-category{
+    margin: 7px;
+}
+/* ========================rating================ */
+
+#ProductCard-rating-main{
+    display: flex;  
+}
+
+.ProductCard-rating{
+    display: flex;
+    box-sizing:border-box;
+    line-height:0px;
+    width: 3.6%;
+    color: wheat;
+    padding: 1px 1px ;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: green;
+ 
+}
+
+.ProductCard-Reviews{
+    font-size: small;
+    font-weight:600;
+    color: blue;
+    margin: 5px 5px ;
+    
+}
+
+/* ============================================================== */
+#ProductCard-price {
+    display: flex;
+    width: 100%;
+
+}
+.ProductCard-pro-price{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.ProductCard-ori-price {
+    font-size: large;
+    margin: 30px 10px;
+}
+
+.ProductCard-dis-price {
+    color:green;
+    font-weight: bold;
+    margin: 30px 0;   
+}
+
+.ProductCard-qty{
+    color:red;
+    font-weight: bolder;
+    margin: 0;
+}
+/* ===================================================================== */
+#ProductCard-offers{
+    width: 100%;
+ 
+}
+.ProductCard-offers-A{
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+}
+.ProductCard-offers-p{
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color:#000000
+    
+}
+
+.ProductCard-T-C{
+ color:blue;
+ font-weight:600;
+}
+
+/* ============================================= */
+
+@media  only screen and (max-width: 600px){
+#ProductCard-Item-List{
+    margin: 3px;
+    display: grid;
+
+}
+.ProductCard-Item-new{
+    font-size: large;
+    margin:  0 0 0 10px;
+    height: 15px;
+}
+.ProductCard-Item-items{
+    width: 97%;
+    height: 250px;
+    
+}
+
+.Cart-btn{  
+    margin: 5px 5px 0 0 ;
+    padding: 20px 30px; 
+}
+.Buy-btn{
+    padding: 20px 45px; 
+}
+
+/* ======================================================================= */
+#ProductCard-main {
+    margin: 10px;
+    width: 90%;
+}
+
+.ProductCard-titel-tag{
+    font-size: x-large;
+    margin: 0;
+}
+.ProductCard-description-tag {
+  font-size:small;
+} 
+/* ============================================= */
+.ProductCard-last-Item{
+    font-weight: bolder;
+    margin: 0;
+}
+
+.ProductCard-off-Ex{
+    font-size: small;
+}
+
+.ProductCard-category{
+    margin: 3px;
+    font-size: 15px;
+}
+/* =================================================================== */
+#ProductCard-rating-main{
+    margin: 10px 0 0 0 ;  
+}
+.ProductCard-rating{
+    width:auto;
+}
+
+.ProductCard-Reviews{
+    font-size: small;
+    margin: 5px 5px ;
+    
+}
+
+/* =============================================================== */
+.ProductCard-pro-price{
+    font-size: 20px;
+}
+.ProductCard-ori-price {
+    font-size: 15px;
+    margin: 22px 10px;
+}
+.ProductCard-dis-price {
+    font-size: 13px;
+    margin: 25px 0;   
+}
+.ProductCard-qty{
+    font-size: 13px;
+    margin: 10px 0 0 0 ;
+}
+/* ========================================================================================= */
+
+.ProductCard-offers-A{
+    font-size: 12px;
+    margin: 0 0 10px 0;
+}
+.ProductCard-offers-p{
+    margin: 10px 0 0 0 ;
+    font-size: 12px;
+}
+}
+
+
+
+
+
+

@@ -1,0 +1,367 @@
+
+    /* --------------------------xxxx--------------------- */
+#home{
+    width: 100%;
+}
+
+/* =================================================================== */
+#laptop-brands{
+    display: flex;
+    margin-bottom: 2px;
+    background-color: whitesmoke;
+}
+.P-S{
+    font-size:x-large;
+    margin: auto 3px;
+    font-weight:bold;
+     text-decoration: none;
+     font-family:Georgia, 'Times New Roman', Times, serif
+    }
+
+    .store1{
+        color: #000000;;
+      } 
+    .store{
+        color: rgb(255, 174, 0);
+        }
+  
+.Lapbrand{
+
+    display: flex;
+    margin: 20px 90px;
+    color: var(--primary-color);
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+/* ======================================================================= */
+
+
+.marquee{    
+color:var(--primary-color);
+font-family:'Times New Roman', Times, serif;
+font-weight: bold;
+font-size:xx-large;
+padding-bottom: 3px;
+
+}
+
+    #Categories-Chart{
+        
+        font-size:x-large;
+        font-weight:bold;
+        color:var(--primary-color);
+
+    }
+    .Categories-Chart-Hr{
+        width: 20%;
+        border:  2px solid var(--secondary-color);
+        outline: 1px solid greenyellow;
+        outline-offset: 1px;
+        margin: 10px auto ;
+       
+    }
+/* ====================================================================================== */
+    .Categories-Images{
+        display: grid ;
+        grid-template-columns: auto auto;
+    }
+    .Images-Chart{
+        height: 45vh;
+        padding: 10px;
+    }
+    .head-Tag{
+        font-size:x-large;
+        font-weight:bold;
+        margin: 0;
+        color:var(--primary-color);   
+    }
+    
+    .Images-Chart-HR{
+        width: 40%;
+        border:  2px solid var(--secondary-color);
+        outline: 1px solid greenyellow;
+        outline-offset: 1px;
+        margin:  5px auto 10px auto  ;
+    }
+    
+     .Heading-Description{
+        width: 80%;
+        text-align: justify;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: auto;
+
+     }
+
+  /* ===============================================================================================================    */
+  .Categories-Images-1{
+    margin: 0 0 30px 0;
+  }
+
+  .Images-Chart-1{
+    margin: -20px;
+  
+}
+.Images-Chart-1{
+    height: 45vh;
+}
+.head-Tag-1{
+    font-size:x-large;
+    font-weight:bold;
+    margin: 0;
+    color:var(--primary-color);   
+}
+
+.Images-Chart-HR-1{
+    width: 20%;
+    border:  2px solid var(--secondary-color);
+    outline: 1px solid greenyellow;
+    outline-offset: 1px;
+    margin:  5px auto 10px auto  ;
+}
+
+ .Heading-Description-1{
+    width: 50%;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+
+ }
+
+/* =================================================================================== */
+
+
+    .Foter-Banner{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .Ban-ner{ 
+ 
+        height: 50vh;
+        width:100%; 
+    }
+    
+    .Ban-ner-1{
+         height: 50vh;
+         width: 100%;
+         margin: 20px 0 0 0;
+        ;
+    }
+    
+
+/* ======================================================================================== */
+
+#Brand-Logo-Footer{
+    display: flex;
+ width: 100%;
+}
+
+ .asus{
+    height: 4vh;
+       margin: 0 50px 40px 0;
+ }
+.dell{
+    height: 8vh;
+    margin: 0 0 30px 0;
+}
+.msi{
+    height:  15vh;
+     margin: 0 50px 8px 70px;
+}
+.hp{
+    height: 7vh;
+       margin: 0 10px 30px 10px;
+}
+.apple{
+    height: 12vh;
+       margin: 0 0 20px 0;
+}
+.toshiba{
+    height: 4vh;
+       margin: 0 20px 40px 0;
+}
+.Rog{
+    height: 8vh;
+       margin: 0 20px 30px 20px;
+}
+.samsung{
+    height: 10vh;
+       margin: 0 0 20px 20px;
+}
+
+/* 
+=================================================================================================== */
+
+
+.footer-container{
+    display: flex;
+    justify-content:center;
+    box-shadow: 0 3px 10px greenyellow;
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+
+}
+.footer-section {
+    margin: 2rem;
+  }
+.footer-subheading {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+
+  .Footer-Chart-HR{
+    width: 80%;
+    border:  2px solid var(--primary-color);
+    outline: 1px solid greenyellow;
+    outline-offset: 3px;
+    margin:  5px auto 10px auto ;
+
+  }
+
+  .footer1 {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 2px;
+  }
+
+/* ==================================================================================================================================================================================== */
+/* footer---------xxxxxxxx----------- */
+
+@media  only screen and (max-width: 600px) {
+    .P-S{
+        font-size:20px;
+        }
+    .Lapbrand{
+       font-size: 12px;
+        margin: 15px 0 15px auto;
+        padding: 0 5px ;       
+    }
+   
+    .marquee{    
+        font-size: 10px;
+        margin: 0  0 -35px 0;
+      
+        }
+   
+     #Categories-Chart{
+     font-size:small;
+      }
+     .Categories-Chart-Hr{
+      width: 35%;
+      margin: 8px auto ;
+     }
+
+/* ==================================================================================================      */
+
+     .Categories-Images{
+        margin: 20px;
+        display: grid ;
+        grid-template-columns: auto auto;
+    }
+    .Images-Chart{
+        height: 10vh;
+        padding: 0px;
+    }
+    .head-Tag{
+        font-size:small;  
+    }
+    
+    .Images-Chart-HR{
+        width: 50%;
+    }
+    
+     .Heading-Description{
+
+        font-size: 6px;
+     }
+ 
+
+     /* =========================================================================================== */
+
+     .Categories-Images-1{
+        margin: 0 0 20px 0;
+      }
+    .Images-Chart-1{
+        height: 10vh;
+        margin: -15px 0 0 0;
+    }
+    .head-Tag-1{
+        font-size:small;  
+    }
+    
+    .Images-Chart-HR-1{
+        width: 30%;
+    }
+
+     .Heading-Description-1{
+        width: 70%;
+      font-size: 7px;
+    
+     }
+/* ============================================================================================= */
+.Ban-ner{ 
+    height: 20vh; 
+}
+.Ban-ner-1{
+    height: 25vh;
+
+}
+/* ========================================================================================== */
+ .asus{
+    height: 0.8vh;
+       margin: 0 2px 16px 0;
+ }
+.dell{
+    height: 2.6vh;
+    margin: 0 10px 10px 10px;
+}
+.msi{
+    height:  5vh;
+    margin: 0 0 0 0;
+}
+.hp{
+    height: 2.3vh;
+  margin: 0 0 10px 10px;
+}
+.apple{
+    height: 2.7vh;
+      margin: 0 0 12px 0;
+}
+.toshiba{
+    height: 0.9vh;
+     margin: 0 10px 16px 0;
+}
+.Rog{
+    height: 1.8vh;
+    margin: 0 10px 13px 0;
+}
+.samsung{
+    height: 3vh;
+      margin: 0 0 10px 0;
+}
+/* ================================================================================================ */
+
+.footer-container{
+  width: 100%;
+
+}
+.footer-section {
+    margin: 5px;
+  }
+  .footer-subheading {
+    font-size: 10px;
+  }
+
+  .Footer-Chart-HR{
+    border:  1px solid var(--primary-color);
+    outline: 1px solid greenyellow;
+    outline-offset: 1px;
+    margin:  5px auto 10px auto ;
+  }
+  .footer1 {
+    font-size: 6px;
+    font-weight: bold;
+    margin: 0.5px;
+  }
+}

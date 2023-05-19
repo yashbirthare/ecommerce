@@ -1,0 +1,11 @@
+.Website-Banner{ 
+    height: 70vh;
+    width: 100%;
+}
+
+@media  only screen and (max-width: 600px) {
+
+.Website-Banner{ 
+    height: 24vh;
+}
+}

@@ -1,0 +1,258 @@
+#Cart-Product-Store{
+    text-align:justify;
+    margin: 30px 30px 30px 10px;
+    border: 1px solid;
+    width: 70%;
+    border-radius: 10px;
+ }
+
+/* ============================================================== */
+.Cart-Product-Main-Area-2nd{
+    display: flex;
+   margin: 0px;
+   padding: 2px;
+   height: 200px;
+}
+
+.Cart-Product-Main-Area-2nd:hover{
+background-color: off wheat;
+ box-shadow: 3px 3px 15px var(--secondary-color),3px 3px 15px var(--primary-color);
+ border-radius: 10px;
+
+}
+
+/* ======================================================================= */
+.Cart-Product-Item-new{
+   position: absolute;
+   top:165px;
+   border-radius: 5px 20px;
+   border: 1px solid yellowgreen;
+   outline: 1px solid black;
+   font-size: 13px;
+   font-weight: bolder;
+   height: 5px;
+   background-color:rgb(255, 174, 0); 
+   padding: 0 9px 15px 9px;
+   margin: 5px;
+}
+
+ .Cart-Product-Img1-Main{
+    margin: 0 0 0 10px ;
+   width: 200px;
+    height: 120px; 
+ }
+/* ============================================================= */
+
+.Cart-Product-tittle-tag{
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 18px;
+   margin: 0 20px 5px 45px;
+}
+/* ================================================================================== */
+
+.Cart-Product-Processor-Main{
+   display: flex;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size:15px;
+   font-weight: bolder;
+   margin: 25px 0 0 20px;
+
+}
+.Cart-Product-count-Main{
+   display: flex;
+   line-height:0px;
+   width: 5%;
+   height: 1%;
+   padding: 0 0 0 2px;
+   color: wheat;
+   border-radius: 5px;
+   font-weight: bold;
+   font-size: 12px;
+   background-color: green;
+   margin: 0 0 0 0;
+}
+.Cart-Product-Processer{
+   margin: 5px 5px;
+}
+.Cart-Product-category{
+   margin: 5px 3px;
+}
+/* ==================================================================== */
+
+.Cart-Product-tittle-Main{
+   width: 85%;
+
+}
+
+.Cart-Product-description-tag{
+ font-style:inherit;
+   font-size:13px;
+   font-weight:600;
+   word-break: break-all;
+   margin: 0 0 0 20px;
+}
+/* ====================================================================== */
+.Cart-Product-Price-Main{
+   display: flex;
+   margin: 0 0 0 19px;
+   line-height: 0;
+}
+.Cart-Product-pro-price{
+   font-size: large;
+   font-weight: bolder;
+}
+
+.Cart-Product-ori-price {
+   font-size: small;
+   margin: 22px 10px;
+}
+
+.Cart-Product-dis-price {
+   color:green;
+   font-size: small;
+   font-weight: bold;
+   margin: 22px 0;   
+}
+.Cart-Product-qty-price{
+   color:red;
+   font-weight: bolder;
+   font-size: 12px;
+   margin: 10px 0 0 0;
+}
+/* ====================================================================================== */
+
+.Cart-Product-Buy-btn{
+   background:#000000;
+   border: 2px solid white;
+   color:#fff;
+   margin: 0 0 0 25px;
+   padding: 10px 25px;
+   font-weight: bold;
+}
+
+.Cart-Product-Buy-btn:hover{
+   background-color:#fff;
+   color: #000000;
+   border: 2px solid black;
+   transition: all 0.5s ease 0s;
+  
+}
+
+
+.IM-REMOVE{
+   color: #000000;
+   font-size: 20px;
+   margin: 7px 0 0 55px;
+}
+.IM-REMOVE:hover{
+   color: red;
+}
+.emoji{
+    display: flex;
+    flex-direction: column;
+}
+
+.emoji-2{
+    font-size: 28px;
+    margin: 0 0 0 50px;
+}
+.emoji-2:hover{
+    color:var(--secondary-color)
+}
+
+/* ============================================================================== */
+  @media  only screen and (max-width: 600px) {
+   
+ #Cart-Product-Main-Area{
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: 1px;
+   margin: 0;
+   padding: 10px 0 10px 0;
+   width: 100%;
+
+}
+.Cart-Product-Main-Area-2nd{
+   margin: 0 10px 0 10px;
+}
+
+.Cart-Product-Main-Area-2nd:hover{
+    box-shadow: 1px 1px 5px var(--secondary-color),1px 1px 5px var(--primary-color);
+    border-radius: 15px;
+
+   }
+
+
+
+
+.Cart-Product-Item-new{
+   position: absolute;
+   border-radius: 2px 20px;
+   font-size: 13px;
+   height: 0.5px;
+   padding: 0 9px 15px 9px;
+}
+ .Cart-Product-Img1-Main{
+   width:  100%;
+    height: 40%; 
+ }
+
+ .Cart-Product-tittle-tag{
+   font-size: 10px;
+   font-weight:bolder;
+   margin: 2px 10px 2px 13px;
+}
+/* =============================================================================== */
+.Cart-Product-Processor-Main{
+   font-size:7px;
+   margin: 0 0 0 12px;
+}
+.Cart-Product-count-Main{
+   width: 20px;
+   font-size: 8px;}
+.Cart-Product-Processer{
+   word-break: break-all;
+   margin: 5px 3px;
+}
+.Cart-Product-category{
+   margin: 5px 0;
+}
+
+/* ======================================================================== */
+.Cart-Product-tittle-Main{
+   width: 90%;
+}
+
+.Cart-Product-description-tag{
+   font-size:6px;
+   margin: 0 0 0 12px;
+   word-break: break-all;
+
+}
+/* =================================================================================== */
+.Cart-Product-Price-Main{
+   margin: 0 0 0 12px;
+}
+.Cart-Product-pro-price{
+   font-size: 9px;
+}
+.Cart-Product-ori-price {
+   font-size: 7px;
+   margin: 10px 6px;
+}
+.Cart-Product-dis-price {
+   font-size: 7px;
+   margin: 10px 0;   
+}
+.Cart-Product-qty-price{
+   font-size: 5px;
+   margin: 4px 0 0 0;
+}
+/* ==================================================================================== */
+.Cart-Product-Buy-btn{
+   font-size: 8px;
+   padding: 5px 15px;
+   font-weight: bold;
+}
+/* ========================================================================================== */
+}

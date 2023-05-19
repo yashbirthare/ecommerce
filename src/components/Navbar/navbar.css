@@ -1,0 +1,109 @@
+#navigation{
+    display: flex;
+    height: 80px;
+    font-family: sans-serif;
+    background-color: white;
+    margin:0 0 10px 0;
+    box-shadow: 0 3px 10px  var(--secondary-color);
+}
+/* 
+========================================================================= */
+.brand-icon{
+    display: flex;
+    height: 8vh;
+    width:  100%;
+    margin: 3px 0 10px 30px;
+}
+.link2{
+    text-decoration: none;
+}
+.Eco{
+    color: var(--primary-color);
+    font-size:xx-large;
+    font-weight: inherit;
+     margin: 10px  0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    .Store{
+        color: var(--secondary-color)}
+/* ================================================================================ */
+.input{
+   text-align: center;
+   border-radius: 5px;
+   width: 100%;
+   font-size: 20px;
+   font-weight: initial;
+   padding: 15px 30px;
+   border: 3px whitesmoke;
+   margin:20px auto;
+   border-bottom: solid rgb(204, 195, 195) 3px;
+   
+   }
+  .input:hover{
+    border-color :  blueviolet ;
+   }
+/* ================================================================== */
+#icons {
+    display: flex;
+    width: 100%;  
+}
+.icons-1 {
+    font-size: 30px;
+    margin:  30px 30px;
+    color:var(--primary-color)
+    
+}
+.icons-1:hover{
+    color:var(--secondary-color);
+    transition: all 0.5s ease 0s;
+  }
+  
+
+.btn{
+padding: 5px 15px;
+margin: 20px 20px 20px  32px ;
+border: 2px solid rgb(255, 204, 2);
+outline: 2px solid yellowgreen;
+outline-offset: 1px;
+background-color: var(--secondary-color);
+border-radius: 1px  10px;
+font-size: 14px;
+font-weight: bold;
+}
+.btn:hover{
+    background-color: black;
+    color: var(--secondary-color);
+    transition: all 0.5s ease 0s;
+}
+/* ======================================================= */
+@media  only screen and (max-width: 600px){
+
+    #navigation{
+        display: flex;
+        height: 65px;
+     }
+    .brand-icon{
+        height: 3vh;
+        margin: 15px 0 0 5px;
+    }
+    .Eco{
+        font-size:11px;
+         margin: 8px 0;
+        }
+            .input{
+            height: 7px;
+            font-size: 9px;
+            padding:3px 5px;
+            margin: 22px 15px 0 0 ;
+            } 
+
+            .icons-1 {
+                font-size: 22px;
+                margin:19px 6px;
+            }
+            .btn{   
+            font-size: 10px;
+            margin:15px 5px ;
+            }
+}
+/* ======================================================================== */
