@@ -1,4 +1,3 @@
-import { useCartList } from "../../context/cartListContext"
 import './cartList.css';
 import { Link } from "react-router-dom";
 import { ImCross } from 'react-icons/im';
@@ -7,9 +6,9 @@ import { useWishList } from "../../context/wishListContext";
 
  const CartList = () => {
  
-const {stateCart,dispatchCart} = useCartList();
-const {cartList} = stateCart;
-const {dispatch} = useWishList();
+    const {state,dispatch} = useWishList();
+const {cartList} = state;
+
 
 
 const getCartListProduct = ({new_arrival,id,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty}) => (
@@ -57,7 +56,7 @@ const getCartListProduct = ({new_arrival,id,image,tittle,count,rate,processor,ca
 
 </div>
 <div className="emoji">
-<p className="IM-REMOVE" onClick={() => dispatchCart({type:"REMOVE_To_CartList",id:id})}><ImCross/></p>
+<p className="IM-REMOVE" onClick={() => dispatch({type:"REMOVE_To_CartList",id:id})}><ImCross/></p>
 <p className="emoji-2"   onClick={() => dispatch({type:"ADD_TO_WishList",payload:id})} ><IoMdHeart/> </p>
 </div>
 </div>

@@ -6,15 +6,15 @@ import { IoMdHeart } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import laptop from "../../assets/images/laptop.jpg";
 import { useWishList } from "../../context/wishListContext";
-import { useCartList } from '../../context/cartListContext';
+
 import "./navbar.css"
 
 
 const Navbar = () => {
   const { state } = useWishList();
   const { wishList } = state;
-  const { stateCart } = useCartList();
-  const { cartList } = stateCart;
+  // const { stateCart } = useCartList();
+  const { cartList } = state;
 
   return (
 

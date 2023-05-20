@@ -10,7 +10,10 @@ const WishList = () => {
  const {state,dispatch} = useWishList();   
  const {wishList} = state;
 
+ 
 const getWishListProduct = ({new_arrival,id,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty}) =>  (
+
+
 
 
 <div id="Wishlist-Product-Store">  
@@ -45,7 +48,7 @@ const getWishListProduct = ({new_arrival,id,image,tittle,count,rate,processor,ca
    <p className="Wishlist-Product-qty-price">Hurry, Only {qty} left!</p>
  </div>  
  <div className="Wishlist-Product-Main-BTN"> 
-      <button className="Wishlist-Product-Buy-btn" onClick ={() => dispatch({type: "MOVE_TO_CART",id:id})} >MOVE TO CART</button>
+      <button className="Wishlist-Product-Buy-btn" onClick ={() => dispatch({type: "MOVE_TO_CART"})} >MOVE TO CART</button>
 </div>
 
 </div>
