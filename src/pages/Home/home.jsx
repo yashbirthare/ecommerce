@@ -14,8 +14,8 @@ import logo4 from "../../assets/images/logo4.png"
 import logo5 from "../../assets/images/logo5.png"
 import logo6 from "../../assets/images/logo6.png"
 import logo7 from "../../assets/images/logo7.png"
-import Slider from "../../components/Slider/Slider"
-import "./Home.css"
+import Slider from "../../components/Slider/slider"
+import "./home.css"
 import React from 'react'
 import { Link } from "react-router-dom"
 

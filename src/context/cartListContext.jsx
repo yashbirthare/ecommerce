@@ -8,7 +8,7 @@ const CartListProvider = ({children}) => {
 
 const [stateCart,dispatchCart ] = useReducer(cartListFun,{cartList:[]})   
  
-function cartListFun(state,action) {
+   function cartListFun(state,action) {
     switch(action.type){
     case "Add_To_CartList":
     const data = state.cartList.find((item) => item.id === action.payload.id)

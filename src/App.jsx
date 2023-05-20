@@ -1,8 +1,8 @@
 import "./App.css";
 import React from 'react'
-import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./pages/Home/Home";
+import Header from "./components/Header/header";
+import Navbar from "./components/Navbar/navbar";
+import Home from "./pages/Home/home";
 
 import { Routes,Route } from "react-router-dom";
 import ProductStore from "./pages/ProductStore/productStore"

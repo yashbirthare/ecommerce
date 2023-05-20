@@ -45,18 +45,26 @@
 /* ================================================================== */
 #icons {
     display: flex;
-    width: 100%;  
+    margin:  0 0 50px 0;
 }
 .icons-1 {
     font-size: 30px;
     margin:  30px 30px;
-    color:var(--primary-color)
-    
+    background-color: var(--primary-color);
+    text-decoration: none;
+ 
 }
-.icons-1:hover{
-    color:var(--secondary-color);
-    transition: all 0.5s ease 0s;
-  }
+.icons-2{
+    position: absolute;
+    top: 55px;
+    right:20%;
+    
+
+
+}
+
+
+
   
 
 .btn{
@@ -69,6 +77,7 @@ background-color: var(--secondary-color);
 border-radius: 1px  10px;
 font-size: 14px;
 font-weight: bold;
+width: 20%;
 }
 .btn:hover{
     background-color: black;

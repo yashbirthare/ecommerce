@@ -4,7 +4,7 @@ import mainbanner1 from "../../assets/images/mainbanner1.png"
 import mainbanner2 from "../../assets/images/mainbanner2.jpeg"
 import mainbanner3 from "../../assets/images/mainbanner3.jpeg"
 import mainbanner4 from "../../assets/images/mainbanner4.jpeg"
-import "./Slider.css"
+import "./slider.css"
 
 const Slider = () => {
 
