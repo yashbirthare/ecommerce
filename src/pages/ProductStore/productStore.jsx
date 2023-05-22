@@ -1,12 +1,12 @@
+import { useGlobal } from "../../context/globalContext";
 import { useStore } from "../../context/storeContext"
-import { useWishList } from "../../context/wishListContext";
 import "./productStore.css"
 
 import { Link } from "react-router-dom";
 
 const ProductStore  = () => {
   const { products } = useStore();
-  const {dispatch} = useWishList();
+  const {dispatch} = useGlobal();
 
   
   return (

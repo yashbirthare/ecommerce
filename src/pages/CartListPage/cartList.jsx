@@ -2,17 +2,19 @@ import './cartList.css';
 import { Link } from "react-router-dom";
 import { ImCross } from 'react-icons/im';
 import {IoMdHeart} from 'react-icons/io';
-import { useWishList } from "../../context/wishListContext";
+import { useGlobal } from "../../context/globalContext";
 
  const CartList = () => {
  
-    const {state,dispatch} = useWishList();
+    const {state,dispatch} = useGlobal();
 const {cartList} = state;
 
 
 
-const getCartListProduct = ({new_arrival,id,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty}) => (
+const GetCartListProduct = ({item}) => {
 
+    const {new_arrival,id,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty} = item
+    return (
     
     <div id="Cart-Product-Store">
      <section><h2>Total quantity: </h2></section>
@@ -56,8 +58,8 @@ const getCartListProduct = ({new_arrival,id,image,tittle,count,rate,processor,ca
 
 </div>
 <div className="emoji">
-<p className="IM-REMOVE" onClick={() => dispatch({type:"REMOVE_To_CartList",id:id})}><ImCross/></p>
-<p className="emoji-2"   onClick={() => dispatch({type:"ADD_TO_WishList",payload:id})} ><IoMdHeart/> </p>
+<p className="IM-REMOVE" onClick={() => dispatch({type:"REMOVE_To_CartList",payload:id})}><ImCross/></p>
+<p className="emoji-2"   onClick={() => dispatch({type:"Add_To_WISHLIST",payload:item})} ><IoMdHeart/> </p>
 </div>
 </div>
 </section>
@@ -75,10 +77,10 @@ const getCartListProduct = ({new_arrival,id,image,tittle,count,rate,processor,ca
 </div>
 
 
-)
+)}
     return(
         <div>
-           {cartList.length > 0 && cartList.map((item) => getCartListProduct(item) )}
+           {cartList.length > 0 && cartList.map((item) => <GetCartListProduct item = {item} /> )}
         </div>
     )
 }

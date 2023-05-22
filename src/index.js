@@ -5,7 +5,8 @@ import App from "./App";
 import { makeServer } from "./server";
 import { BrowserRouter } from "react-router-dom"
 import { StoreProvider } from "./context/storeContext"
-import { WishListProvider } from "./context/wishListContext";
+import { GlobalProvider } from "./context/globalContext";
+
 // Call make Server
 makeServer();
 
@@ -14,9 +15,9 @@ ReactDOM.render(
 <React.StrictMode>
 <BrowserRouter>
 <StoreProvider>
-<WishListProvider>
+<GlobalProvider>
     <App />
-</WishListProvider>
+</GlobalProvider>
 </StoreProvider>    
 </BrowserRouter>
 </React.StrictMode>,
