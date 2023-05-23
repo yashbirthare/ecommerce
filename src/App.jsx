@@ -3,6 +3,7 @@ import React from 'react'
 import Header from "./components/Header/header";
 import Navbar from "./components/Navbar/navbar";
 import Home from "./pages/Home/home";
+import Footer from "./components/Footer/footer"
 
 import { Routes,Route } from "react-router-dom";
 import ProductStore from "./pages/ProductStore/productStore"
@@ -28,7 +29,7 @@ const App = () => {
    <Route path="/CartPage" element={<CartPage/>}/>
   </Routes>
    
-   <div><footer/></div>
+  <Footer/>
 
     </div>
   )

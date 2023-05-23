@@ -51,19 +51,31 @@
     font-size: 30px;
     margin:  30px 30px;
     background-color: var(--primary-color);
-    text-decoration: none;
+   
  
 }
 .icons-2{
-    position: absolute;
-    top: 55px;
-    right:20%;
-    
 
+    top: -58px;
+    right:-20px; 
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+    position: relative;
+    padding:1px
 
+   
 }
 
 
+
+.icon{
+    color: var(--primary-color);
+}
 
   
 
@@ -87,32 +99,32 @@ width: 20%;
 /* ======================================================= */
 @media  only screen and (max-width: 600px){
 
-    #navigation{
-        display: flex;
-        height: 65px;
-     }
-    .brand-icon{
+       #navigation{
+       display: flex;
+       height: 65px;
+        }
+       .brand-icon{
         height: 3vh;
         margin: 15px 0 0 5px;
-    }
-    .Eco{
+        }
+        .Eco{
         font-size:11px;
          margin: 8px 0;
         }
-            .input{
-            height: 7px;
-            font-size: 9px;
-            padding:3px 5px;
-            margin: 22px 15px 0 0 ;
-            } 
+        .input{
+        height: 7px;
+        font-size: 9px;
+        padding:3px 5px;
+        margin: 22px 15px 0 0 ;
+        } 
 
-            .icons-1 {
-                font-size: 22px;
-                margin:19px 6px;
-            }
-            .btn{   
-            font-size: 10px;
-            margin:15px 5px ;
-            }
+        .icons-1 {
+        font-size: 22px;
+        margin:19px 6px;
+        }
+        .btn{   
+        font-size: 10px;
+        margin:15px 5px ;
+        }
 }
 /* ======================================================================== */

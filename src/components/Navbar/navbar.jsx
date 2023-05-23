@@ -31,8 +31,8 @@ const Navbar = () => {
       <div id='icons'>
 
         <div className='icons-1'> <BsPersonFill />  </div>
-        <div className='icons-1'> <Link to="/WishList"><IoMdHeart /><div className='icons-2'>{wishList.length} </div> </Link></div>
-        <div className='icons-1'> <Link to="/CartPage"> <ImCart /><div> {cartList.length} </div></Link> </div>
+        <div className='icons-1'> <Link className='icon'  to="/WishList"><IoMdHeart /><div className='icons-2'>{wishList.length} </div> </Link></div>
+        <div className='icons-1'> <Link className='icon' to="/CartPage"> <ImCart /><div className='icons-2' > {cartList.length} </div></Link> </div>
 
       </div>
       <button className='btn'>Log Out</button>
@@ -43,3 +43,4 @@ const Navbar = () => {
 export default Navbar 
 
 
+ 

@@ -1,14 +1,15 @@
+import { useState } from 'react';
 import './cartList.css';
 import { Link } from "react-router-dom";
 import { ImCross } from 'react-icons/im';
 import {IoMdHeart} from 'react-icons/io';
 import { useGlobal } from "../../context/globalContext";
 
+
  const CartList = () => {
  
     const {state,dispatch} = useGlobal();
-const {cartList} = state;
-
+    const {cartList,cartPrice,cartDiscount,totalAmount} = state;
 
 
 const GetCartListProduct = ({item}) => {
@@ -50,10 +51,10 @@ const GetCartListProduct = ({item}) => {
    <p className="Cart-Product-qty-price">Hurry, Only {qty} left!</p>
  </div>  
  <div className="Cart-Product-Main-BTN"> 
- <p className="Qty1" >Qty:</p>
- <button className="Qty1-plus" >+</button>
- <button className="Qty1-mainus">-</button>
+ <p className="Qty1">Qty:{state.count}</p>
 
+ <button className= "Qty1-plus" onClick={() => dispatch({type: "ADD-TO-BILL",payload:price,discount})}>+</button>
+ <button className="Qty1-mainus" onClick={  () => dispatch({type: "SUB-TO-BILL",payload:price,discount})} >-</button>
 </div>
 
 </div>
@@ -64,15 +65,7 @@ const GetCartListProduct = ({item}) => {
 </div>
 </section>
 
- <section className="Checkout-area-main">
-   <h3 className="Price Details">Price Details</h3>
-   <div className="divider"></div>
-   <p>Discount On MRP</p>
-   <p>Coupon Discount</p>
-   <p>Convenience Fee</p>
-   <p>Total Amount</p>
-   <button>Checkout</button>
-</section>
+
 </div>
 </div>
 
@@ -81,6 +74,16 @@ const GetCartListProduct = ({item}) => {
     return(
         <div>
            {cartList.length > 0 && cartList.map((item) => <GetCartListProduct item = {item} /> )}
+           <section className="Checkout-area-main">
+   <h3 className="Price Details">Price Details</h3>
+   <div className="divider"></div>
+   <div> Total MRP</div>            <div>{cartPrice}</div>
+   <div> Discount On MRP</div>      <div>{cartDiscount}</div>
+   <div> Coupon Discount</div>      <div>Apply coupon</div>
+   <div> Convenience Fee</div>      <div>RS.99</div>
+   <div> Total Amount</div>         <div>{totalAmount}</div>
+   <button>Checkout</button>
+</section>
         </div>
     )
 }

@@ -3,7 +3,7 @@ import {BsTwitter} from "react-icons/bs"
 import {AiFillInstagram} from "react-icons/ai"
 import {AiFillFacebook} from "react-icons/ai"
 import {BsGithub} from "react-icons/bs"
-import "./Footer.css"
+import "./footer.css"
 
 import React from 'react'
 

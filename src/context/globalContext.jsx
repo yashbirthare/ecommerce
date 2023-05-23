@@ -7,14 +7,14 @@ const useGlobal = () => useContext(GlobalContext);
 
 const GlobalProvider = ({children}) => {
 
-   const [state, dispatch] = useReducer(wishListFun,{wishList:[],cartList:[],}) 
+   const [state, dispatch] = useReducer(wishListFun,{wishList:[],cartList:[],cartPrice:[],cartDiscount:[],cartTotal:[],count:0}) 
    
     
     function wishListFun (state, action)  {
         switch(action.type){
 
 
-        case "Add_To_CartList":
+           case "Add_To_CartList":
            const cartData = state.cartList.find((item) => item.id === action.payload.id)
             if (cartData){
                alert("data is already present in cartlist")
@@ -44,7 +44,7 @@ const GlobalProvider = ({children}) => {
             } else {
                const newCart = [...state.cartList, action.payload]
                const newWishlist = state.wishList.filter((Wis) => Wis.id !== action.payload.id )
-               return {...state, cartList: newCart, wishList: newWishlist }
+               return {...state, cartList: newCart, wishList: newWishlist,cartPrice: state.cartPrice + action.payload}
              }
              
            case "Move_to_wishlist": 
@@ -55,6 +55,20 @@ const GlobalProvider = ({children}) => {
                return {...state, wishList: [...state.wishList , action.payload]}  
             }
 
+           case "ADD-TO-BILL":
+            return {...state, cartPrice: state.cartPrice + action.payload,
+                    cartDiscount: state.cartDiscount + action.payload,
+                    cartTotal:    state.cartTotal + action.payload,
+                    count: state.count + 1
+                    }
+            case "SUB-TO-BILL":
+            return {...state, cartPrice: state.cartPrice - action.payload,
+                   cartDiscount: state.cartDiscount - action.payload,
+                   cartTotal: state.cartTotal - action.payload,
+                   count: state.count - 1
+                    }        
+           
+            
         default:
             return state;
         }
