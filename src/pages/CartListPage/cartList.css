@@ -1,6 +1,6 @@
 
 #Cart-Product-Store{
-
+ display: flex;
     text-align:justify;
     margin: 20px;
    
@@ -173,8 +173,19 @@
 .emoji-2:hover{
     color:var(--secondary-color)
 }
+/* ================Total Quantity area=========================================== */
 
-/* =================================================================== */
+.Total-Quantity-area-CartList{
+   font-size: 32px;
+   font-weight: 500;
+   font-family:initial;
+   text-align: left;
+   margin: 10px 0 10px 5px;
+   
+}
+
+
+/* ==============================Price Details area===================================== */
 .Checkout-area-main{
    
    border: 1px solid black;

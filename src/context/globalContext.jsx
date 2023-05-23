@@ -7,7 +7,7 @@ const useGlobal = () => useContext(GlobalContext);
 
 const GlobalProvider = ({children}) => {
 
-   const [state, dispatch] = useReducer(wishListFun,{wishList:[],cartList:[],cartPrice:[],cartDiscount:[],cartTotal:[],count:0}) 
+   const [state, dispatch] = useReducer(wishListFun,{wishList:[],cartList:[],cartPrice:[],cartDiscount:[],cartTotal:[],count:[]}) 
    
     
     function wishListFun (state, action)  {
@@ -56,17 +56,15 @@ const GlobalProvider = ({children}) => {
             }
 
            case "ADD-TO-BILL":
-            return {...state, cartPrice: state.cartPrice + action.payload,
-                    cartDiscount: state.cartDiscount + action.payload,
-                    cartTotal:    state.cartTotal + action.payload,
-                    count: state.count + 1
-                    }
-            case "SUB-TO-BILL":
-            return {...state, cartPrice: state.cartPrice - action.payload,
-                   cartDiscount: state.cartDiscount - action.payload,
-                   cartTotal: state.cartTotal - action.payload,
-                   count: state.count - 1
-                    }        
+               function bill (() => {
+                  acumulator + currentValue
+               })
+            // case "SUB-TO-BILL":
+            // return {...state, cartPrice: state.cartPrice - action.payload,
+            //        cartDiscount: state.cartDiscount - action.payload,
+            //        cartTotal: state.cartTotal - action.payload,
+            //        count: state.count - 1
+            //         }        
            
             
         default:

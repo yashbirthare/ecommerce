@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './cartList.css';
 import { Link } from "react-router-dom";
 import { ImCross } from 'react-icons/im';
@@ -12,13 +11,17 @@ import { useGlobal } from "../../context/globalContext";
     const {cartList,cartPrice,cartDiscount,totalAmount} = state;
 
 
-const GetCartListProduct = ({item}) => {
-
-    const {new_arrival,id,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty} = item
-    return (
     
+
+    const GetCartListProduct = ({item}) => {
+    const {new_arrival,id,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty} = item
+    
+   
+    return (
+
+
     <div id="Cart-Product-Store">
-     <section><h2>Total quantity: </h2></section>
+     
      <div className="section-main">  
     <section className="Cart-Product-Item-secound">
     <div className="Cart-Product-Main-Area-2nd">
@@ -51,10 +54,10 @@ const GetCartListProduct = ({item}) => {
    <p className="Cart-Product-qty-price">Hurry, Only {qty} left!</p>
  </div>  
  <div className="Cart-Product-Main-BTN"> 
- <p className="Qty1">Qty:{state.count}</p>
+ <p className="Qty1">Qty: {state.count}</p>
 
- <button className= "Qty1-plus" onClick={() => dispatch({type: "ADD-TO-BILL",payload:price,discount})}>+</button>
- <button className="Qty1-mainus" onClick={  () => dispatch({type: "SUB-TO-BILL",payload:price,discount})} >-</button>
+ <button className= "Qty1-plus" onClick={() => dispatch({type: "ADD-TO-BILL",payload:price})}>+</button>
+ <button className="Qty1-mainus" onClick={  () => dispatch({type: "SUB-TO-BILL",payload:price})} >-</button>
 </div>
 
 </div>
@@ -62,19 +65,21 @@ const GetCartListProduct = ({item}) => {
 <p className="IM-REMOVE" onClick={() => dispatch({type:"REMOVE_To_CartList",payload:id})}><ImCross/></p>
 <p className="emoji-2"   onClick={() => dispatch({type:"Add_To_WISHLIST",payload:item})} ><IoMdHeart/> </p>
 </div>
+
 </div>
 </section>
-
-
 </div>
 </div>
-
-
 )}
+
     return(
-        <div>
-           {cartList.length > 0 && cartList.map((item) => <GetCartListProduct item = {item} /> )}
-           <section className="Checkout-area-main">
+  <div>
+<section className='Total-Quantity-area-CartList'> Total quantity: {state.count}  </section>
+
+
+   {cartList.length > 0 && cartList.map((item) => <GetCartListProduct item = {item} />)}
+
+   <section className="Checkout-area-main">
    <h3 className="Price Details">Price Details</h3>
    <div className="divider"></div>
    <div> Total MRP</div>            <div>{cartPrice}</div>
@@ -83,10 +88,9 @@ const GetCartListProduct = ({item}) => {
    <div> Convenience Fee</div>      <div>RS.99</div>
    <div> Total Amount</div>         <div>{totalAmount}</div>
    <button>Checkout</button>
-</section>
-        </div>
-    )
-}
+   </section>
+    </div>
+    )}
 
 export default CartList;
 
