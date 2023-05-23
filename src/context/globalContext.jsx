@@ -56,15 +56,17 @@ const GlobalProvider = ({children}) => {
             }
 
            case "ADD-TO-BILL":
-               function bill (() => {
-                  acumulator + currentValue
-               })
-            // case "SUB-TO-BILL":
-            // return {...state, cartPrice: state.cartPrice - action.payload,
-            //        cartDiscount: state.cartDiscount - action.payload,
-            //        cartTotal: state.cartTotal - action.payload,
-            //        count: state.count - 1
-            //         }        
+            return {...state, cartPrice: state.cartPrice - action.payload,
+               cartDiscount: state.cartDiscount - action.payload,
+               cartTotal: state.cartTotal - action.payload,
+               count: state.count - 1
+                } 
+            case "SUB-TO-BILL":
+            return {...state, cartPrice: state.cartPrice - action.payload,
+                   cartDiscount: state.cartDiscount - action.payload,
+                   cartTotal: state.cartTotal - action.payload,
+                   count: state.count - 1
+                    }        
            
             
         default:
