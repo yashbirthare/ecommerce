@@ -12,9 +12,8 @@ import "./navbar.css"
 
 const Navbar = () => {
   const { state } = useGlobal();
-  const { wishList } = state;
-  // const { stateCart } = useCartList();
-  const { cartList } = state;
+  const { wishList,cartList } = state;
+
 
   return (
 
@@ -30,10 +29,9 @@ const Navbar = () => {
 
       <div id='icons'>
 
-        <div className='icons-1'> <BsPersonFill />  </div>
-        <div className='icons-1'> <Link className='icon'  to="/WishList"><IoMdHeart /><div className='icons-2'>{wishList.length} </div> </Link></div>
-        <div className='icons-1'> <Link className='icon' to="/CartPage"> <ImCart /><div className='icons-2' > {cartList.length} </div></Link> </div>
-
+        <div className='icons-1'> <BsPersonFill /></div>
+        <div className='icons-1'> <Link className='icon'  to="/WishList"><IoMdHeart/><div  className='icons-2'>{wishList.length} </div> </Link></div>
+        <div className='icons-1'> <Link className='icon' to="/CartPage"> <ImCart/><div className='icons-2' > {cartList.length} </div></Link> </div>
       </div>
       <button className='btn'>Log Out</button>
     </div>

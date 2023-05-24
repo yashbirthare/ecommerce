@@ -1,6 +1,8 @@
 import { Response } from "miragejs";
 import { formatDate, requiresAuth } from "../utils/authUtils";
 
+
+
 /**
  * All the routes related to Cart are present here.
  * These are private routes.
@@ -11,6 +13,8 @@ import { formatDate, requiresAuth } from "../utils/authUtils";
  * This handler handles getting items to user's cart.
  * send GET Request at /api/user/cart
  * */
+
+
 export const getCartItemsHandler = function (schema, request) {
   const userId = requiresAuth.call(this, request);
   if (!userId) {
