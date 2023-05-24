@@ -36,6 +36,8 @@ return (
    <p className="ProductStore-description-tag">{description}</p>
    </div>
 
+
+
 <div className="ProductStore-Price-Main">
    <p className="ProductStore-pro-price">{price}</p>
    <s> <p className="ProductStore-ori-price">{original_price}</p> </s>
@@ -47,6 +49,7 @@ return (
       <button className="ProductStore-Cart-btn" onClick={()=> dispatch ({type:"Add_To_WISHLIST",payload: item})}>ADD TO WISHLIST</button>
       <button className="ProductStore-Buy-btn" onClick={()=> dispatch({type:"Add_To_CartList",payload: item})} >MOVE TO CART</button>
 </div>
+
 </div>)})} 
     
       </div>

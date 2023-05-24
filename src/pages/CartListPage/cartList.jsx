@@ -74,10 +74,14 @@ import { useGlobal } from "../../context/globalContext";
 
     return(
   <div>
-<section className='Total-Quantity-area-CartList'> Total quantity: {state.count}  </section>
 
+     <section className='Total-Quantity-area-CartList'> Total quantity: {state.count}  </section>
 
-   {cartList.length > 0 && cartList.map((item) => <GetCartListProduct item = {item} />)}
+   <div className='cart-view-area' >
+      <div>
+      {cartList.length > 0 && cartList.map((item) => <GetCartListProduct item = {item} />)}
+      </div>
+  
 
    <section className="Checkout-area-main">
    <h3 className="Price Details">Price Details</h3>
@@ -89,6 +93,8 @@ import { useGlobal } from "../../context/globalContext";
    <div> Total Amount</div>         <div>{totalAmount}</div>
    <button>Checkout</button>
    </section>
+
+   </div>
     </div>
     )}
 

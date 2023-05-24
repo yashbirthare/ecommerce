@@ -1,9 +1,8 @@
 
 #Cart-Product-Store{
- display: flex;
+    display: flex;
     text-align:justify;
     margin: 20px;
-   
     border-radius: 10px;
  }
 /* ======================================================= */
@@ -30,14 +29,14 @@
 /* ======================================================================= */
 
 .Cart-Product-Item-new{
-   position: absolute;
-   top:210px;
+   top: 20rem;
    border-radius: 5px 20px;
    border: 1px solid yellowgreen;
    outline: 1px solid black;
    font-size: 13px;
    font-weight: bolder;
    height: 5px;
+   width: 30px;
    background-color:rgb(255, 174, 0); 
    padding: 0 9px 15px 9px;
    margin: 5px;
@@ -182,6 +181,10 @@
    text-align: left;
    margin: 10px 0 10px 5px;
    
+}
+
+.cart-view-area{
+   display: flex;
 }
 
 

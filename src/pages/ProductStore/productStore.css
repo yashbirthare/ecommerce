@@ -159,7 +159,7 @@ background-color: off wheat;
  #ProductStore-Main-Area{
    display: grid;
    grid-template-columns: auto auto;
-   gap: 1px;
+   /* gap: 5px; */
    margin: 0;
    padding: 10px 0 10px 0;
    width: 100%;
@@ -187,7 +187,7 @@ background-color: off wheat;
 }
  .ProductStore-Img1-Main{
    width:  100%;
-    height: 40%; 
+    height: 50%; 
  }
 
  .ProductStore-tittle-tag{
@@ -243,7 +243,7 @@ background-color: off wheat;
 }
 /* ==================================================================================== */
 .ProductStore-Main-BTN{
-   width: 100%;
+   display: flex;
    margin: 0 0 10px 10px;
    justify-content: center;
 }
