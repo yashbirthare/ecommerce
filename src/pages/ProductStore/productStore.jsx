@@ -8,6 +8,7 @@ const ProductStore  = () => {
   const { products } = useStore();
   const {dispatch} = useGlobal();
 
+ 
   
   return (
     
@@ -15,6 +16,7 @@ const ProductStore  = () => {
     <div id="ProductStore-Main-Area"> {products.map((item) => {
      
    const  {new_arrival,id,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty} = item
+
 return (
 
     <div className="ProductStore-Main-Area-2nd">
@@ -47,7 +49,7 @@ return (
 
  <div className="ProductStore-Main-BTN"> 
       <button className="ProductStore-Cart-btn" onClick={()=> dispatch ({type:"Add_To_WISHLIST",payload: item})}>ADD TO WISHLIST</button>
-      <button className="ProductStore-Buy-btn" onClick={()=> dispatch({type:"Add_To_CartList",payload: item})}>MOVE TO CART</button>
+      <button className="ProductStore-Buy-btn" onClick={()=> dispatch({type:"Add_To_CartList",payload: item,price})}>MOVE TO CART</button>
 </div>
 
 </div>)})} 

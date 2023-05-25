@@ -8,13 +8,13 @@ import { useGlobal } from "../../context/globalContext";
  const CartList = () => {
  
     const {state,dispatch} = useGlobal();
-    const {cartList,cartPrice,cartDiscount,totalAmount} = state;
+    const {cartList,cartPrice,cartDiscount,totalPrice} = state;
 
 
     const GetCartListProduct = ({item}) => {
     const {new_arrival,id,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty} = item
     
-   
+  
     return (
 
 
@@ -88,7 +88,7 @@ import { useGlobal } from "../../context/globalContext";
    <div> Discount On MRP</div>      <div>{cartDiscount}</div>
    <div> Coupon Discount</div>      <div>Apply coupon</div>
    <div> Convenience Fee</div>      <div>RS.99</div>
-   <div> Total Amount</div>         <div>{totalAmount}</div>
+   <div> Total Amount</div>         <div>{totalPrice}</div>
    <button>Checkout</button>
    </section>
 

@@ -7,10 +7,11 @@ const useGlobal = () => useContext(GlobalContext);
 
 const GlobalProvider = ({children}) => {
 
-   const [state, dispatch] = useReducer(wishListFun,{wishList:[],cartList:[],cartPrice:[],cartDiscount:[],cartTotal:[],count:[]}) 
+   const [state, dispatch] = useReducer(wishListFun,{wishList:[],cartList:[],cartPrice:[],cartDiscount:[],totalPrice:[],cartTotal:[],count:[]}) 
    
     
     function wishListFun (state, action)  {
+       console.log("dfasdfasd",action.payload.price)
         switch(action.type){
 
 
@@ -19,8 +20,12 @@ const GlobalProvider = ({children}) => {
             if (cartData){
                alert("data is already present in cartlist")
             }else{
-                return {...state, cartList: [...state.cartList , action.payload]}
+                return {...state, cartList: [...state.cartList , action.payload],
+                totalPrice: [...state.totalPrice + action.payload.price]
+               }
            }
+
+   
      
            case "REMOVE_To_CartList":
            return {...state, cartList: state.cartList.filter((crt) => crt.id !== action.payload)}
@@ -56,10 +61,10 @@ const GlobalProvider = ({children}) => {
             }
 
            case "ADD-TO-BILL":
-            return {...state, cartPrice: state.cartPrice - action.payload,
-               cartDiscount: state.cartDiscount - action.payload,
-               cartTotal: state.cartTotal - action.payload,
-               count: state.count - 1
+            return {...state, cartPrice: state.cartPrice + action.payload,
+               cartDiscount: state.cartDiscount + action.payload,
+               cartTotal: state.cartTotal + action.payload,
+               count: state.count + 1
                 } 
             case "SUB-TO-BILL":
             return {...state, cartPrice: state.cartPrice - action.payload,
