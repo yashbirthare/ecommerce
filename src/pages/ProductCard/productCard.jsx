@@ -1,7 +1,13 @@
 import React from "react";
 import "./productCard.css"
+import { useGlobal } from "../../context/globalContext";
 
- const ProductCard = ({tittle,description,price,category,processor,qty,new_arrival,original_price,discount,rate,count,image }) => {
+
+ const ProductCard = (item) => {
+
+  const  {new_arrival,id,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty} = item;
+
+  const {dispatch} = useGlobal();
 
   return (
     <div id="ProductCard-Item-List">
@@ -10,8 +16,9 @@ import "./productCard.css"
        <img className="ProductCard-Item-items" src={image} alt="" />
        
        <div className="Main-BTN"> 
-      <button className="Cart-btn">ADD TO CART</button>
-      <button className="Buy-btn" >BUY NOW</button>
+      <button className="Cart-btn" onClick={() => dispatch({ type:"Add_To_WISHLIST",payload: item})} >ADD TO WISHLIST</button>
+      
+      <button className="Buy-btn"  onClick={() => dispatch({ type:"Add_To_CartList",payload: item})}>MOVE TO CART</button>
       </div>
      </div>
 

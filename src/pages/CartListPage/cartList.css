@@ -16,7 +16,7 @@
 /* ======================================================================= */
 
  .Cart-Product-Item-secound{
-   border: 1px solid black;
+   border: 0.1px solid var(--secondary-color);
    height: 230px;
   }
 
@@ -194,7 +194,7 @@
 /* ==============================Price Details area===================================== */
 .Checkout-area-main{
    
-   border: 1px solid black;
+   border: 0.1px solid var(--secondary-color);
    margin: 0 10px 0 20px ;
    width: 50%;
    height: 350px;
@@ -203,6 +203,8 @@
 .cart-view-area-1{
    overflow:scroll;
    height: 300px;
+   border: 0.1px solid var(--secondary-color);
+   margin: 0 0 0 10px;
 }
 
 .Price Details{
