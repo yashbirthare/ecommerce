@@ -11,8 +11,6 @@ import { useGlobal } from "../../context/globalContext";
     const {cartList,cartPrice,cartDiscount,totalAmount} = state;
 
 
-    
-
     const GetCartListProduct = ({item}) => {
     const {new_arrival,id,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty} = item
     
@@ -78,7 +76,7 @@ import { useGlobal } from "../../context/globalContext";
      <section className='Total-Quantity-area-CartList'> Total quantity: {state.count}  </section>
 
    <div className='cart-view-area' >
-      <div>
+      <div className='cart-view-area-1' >
       {cartList.length > 0 && cartList.map((item) => <GetCartListProduct item = {item} />)}
       </div>
   

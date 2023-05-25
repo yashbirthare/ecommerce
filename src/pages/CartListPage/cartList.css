@@ -4,17 +4,20 @@
     text-align:justify;
     margin: 20px;
     border-radius: 10px;
+
  }
 /* ======================================================= */
 
 .section-main{
    display: flex;
+   
 }
 
 /* ======================================================================= */
 
  .Cart-Product-Item-secound{
    border: 1px solid black;
+   height: 230px;
   }
 
  
@@ -192,8 +195,14 @@
 .Checkout-area-main{
    
    border: 1px solid black;
-   margin: 0 0 0 10px ;
+   margin: 0 10px 0 20px ;
    width: 50%;
+   height: 350px;
+   box-sizing: border-box;
+}
+.cart-view-area-1{
+   overflow:scroll;
+   height: 300px;
 }
 
 .Price Details{
