@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className='icons-1'> <Link className='icon'  to="/WishList"><IoMdHeart/><div  className='icons-2'>{wishList.length} </div> </Link></div>
         <div className='icons-1'> <Link className='icon' to="/CartPage"> <ImCart/><div className='icons-2' > {cartList.length} </div></Link> </div>
       </div>
-      <button className='btn'>Log Out</button>
+      <Link className='btn' to="/LoginPage"> <a>Log Out</a></Link>
     </div>
   )
 }

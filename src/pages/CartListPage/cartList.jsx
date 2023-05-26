@@ -52,9 +52,9 @@ import { useGlobal } from "../../context/globalContext";
    <p className="Cart-Product-qty-price">Hurry, Only {qty} left!</p>
  </div>  
  <div className="Cart-Product-Main-BTN"> 
- <p className="Qty1">Qty: {state.count}</p>
-
+ <p className="Qty1">Qty: </p>
  <button className= "Qty1-plus" onClick={() => dispatch({type: "ADD-TO-BILL",payload:price})}>+</button>
+ <p className="Qty1">{state.count}</p>
  <button className="Qty1-mainus" onClick={  () => dispatch({type: "SUB-TO-BILL",payload:price})} >-</button>
 </div>
 
