@@ -8,13 +8,35 @@ import { useGlobal } from "../../context/globalContext";
  const CartList = () => {
  
     const {state,dispatch} = useGlobal();
-    const {cartList,cartPrice,cartDiscount,totalPrice} = state;
+    const {cartList,totalPrice} = state;
 
+
+    const getPrice = (price) => {
+      const val = price.split('')
+      val.shift()
+      const num = val.join('')
+       return  Number(num.replaceAll(',', ''))
+
+    }
+    
+    const calculatedPrice = () => {
+      return  cartList.reduce((acc, curr) => {
+         acc = acc + getPrice(curr.price)*curr.quantity
+         return acc
+        }, 0)
+   }
+
+   const calculatedQty = () => {
+      return  cartList.reduce((acc, curr) => {
+         acc = acc + curr.quantity
+         return acc
+        }, 0)
+   }
 
     const GetCartListProduct = ({item}) => {
-    const {new_arrival,id,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty} = item
+    const {new_arrival,id,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty, quantity} = item
     
-  
+
     return (
 
 
@@ -53,9 +75,9 @@ import { useGlobal } from "../../context/globalContext";
  </div>  
  <div className="Cart-Product-Main-BTN"> 
  <p className="Qty1">Qty: </p>
- <button className= "Qty1-plus" onClick={() => dispatch({type: "ADD-TO-BILL",payload:price})}>+</button>
- <p className="Qty1">{state.count}</p>
- <button className="Qty1-mainus" onClick={  () => dispatch({type: "SUB-TO-BILL",payload:price})} >-</button>
+ <button className= "Qty1-plus" onClick={() => dispatch({type: "INCREMENT_QTY",payload: item,price})}>+</button>
+ <p className="Qty1">{quantity}</p>
+ <button className="Qty1-mainus" onClick={() => dispatch({type: "DECREMENT_QTY",payload: item,price})} >-</button>
 </div>
 
 </div>
@@ -73,7 +95,7 @@ import { useGlobal } from "../../context/globalContext";
     return(
   <div>
 
-     <section className='Total-Quantity-area-CartList'> Total quantity: {state.count}  </section>
+     <section className='Total-Quantity-area-CartList'> Total quantity: {calculatedQty()}  </section>
 
    <div className='cart-view-area' >
       <div className='cart-view-area-1' >
@@ -84,12 +106,13 @@ import { useGlobal } from "../../context/globalContext";
    <section className="Checkout-area-main">
    <h3 className="Price Details">Price Details</h3>
    <div className="divider"></div>
-   <div> Total MRP</div>            <div>{cartPrice}</div>
-   <div> Discount On MRP</div>      <div>{cartDiscount}</div>
+   <div> Total MRP</div>            
+   <div> Discount On MRP</div>      
    <div> Coupon Discount</div>      <div>Apply coupon</div>
    <div> Convenience Fee</div>      <div>RS.99</div>
-   <div> Total Amount</div>         <div>{totalPrice}</div>
-   <button>Checkout</button>
+   <span> Total Amount </span>  
+   <span>{calculatedPrice()}</span>
+   <div><button>Checkout</button></div>
    </section>
 
    </div>
