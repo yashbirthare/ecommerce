@@ -5,7 +5,7 @@ import { useGlobal } from "../../context/globalContext";
 
  const ProductCard = (item) => {
 
-  const  {new_arrival,id,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty} = item;
+  const  {new_arrival,image,tittle,count,rate,processor,category,description,price,original_price,discount,qty} = item;
 
   const {dispatch} = useGlobal();
 
